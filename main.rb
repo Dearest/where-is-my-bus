@@ -47,6 +47,7 @@ class Bus
       bus_list[0,3].each do |item|
         result_string += "第#{item[:latsBus]}辆 #{item[:number]}站 #{item[:dis]} \n"
       end
+      result_string
     end
   end
 end
