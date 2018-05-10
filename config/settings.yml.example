@@ -1,7 +1,6 @@
 pushbullet:
-  token: ''
   android: ''
 home:
   param: ''
-compant:
+company:
   param: ''

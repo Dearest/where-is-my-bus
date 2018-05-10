@@ -2,6 +2,7 @@
 .idea/**/workspace.xml
 config/settings.yml
 .idea/
+token.json
 .idea/**/tasks.xml
 .idea/dictionaries
 .idea/**/dataSources/
