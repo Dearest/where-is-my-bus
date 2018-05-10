@@ -44,8 +44,8 @@ class Bus
       bus_list = JSON.parse(body).deep_symbolize_keys[:list]
       result_string = ''
       return '等待发车' if bus_list.empty?
-      bus_list[0,3].each do |item|
-        result_string += "第#{item[:latsBus]}辆 #{item[:number]}站 #{item[:dis]} \n"
+      bus_list[0,2].each do |item|
+        result_string += "第#{item[:lastBus] + 1 }辆 #{item[:number]}站 #{item[:dis]}|"
       end
       result_string
     end
