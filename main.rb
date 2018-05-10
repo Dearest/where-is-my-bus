@@ -9,7 +9,7 @@ class Push
   attr_reader :client
 
   def initialize
-    @client = PushbulletRuby::Client.new("token": $config.pushbullet.token)
+    @client = PushbulletRuby::Client.new(PushbulletRuby::Token.load)
   end
 
   def push_android(content)
